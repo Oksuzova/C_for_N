@@ -20,6 +20,7 @@ int main()
 
     switch(choice)
     {
+
         case 1: price = 200; break;
         case 2: price = 250; break;
         case 3: price = 350; break;
@@ -33,6 +34,9 @@ int main()
             printf("Area: %.2f m2\n", cust_size);
             printf("For payment: %.2f grn\n", cust_size*price);
         }
+
+        else
+            printf("Wrong material code\n");
 
     return 0;
 }
