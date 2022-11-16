@@ -20,8 +20,7 @@ int main()
     printf("    Debt    Percent   Payment    \n");
     printf("---------------------------------\n");
 
-    float perc_month = percent/12;
-    float perc_grn = sum * perc_month/100;
+    float perc_grn = sum * (percent/12/100);
     payment = sum/term + perc_grn;
     float payment_month = sum/term;
     float total_percent = 0;
@@ -31,7 +30,7 @@ int main()
             printf("%d  %9.2f  %9.2f  %9.2f   \n", i, sum, perc_grn, payment);
             sum -= payment_month;
             total_percent += perc_grn;
-            perc_grn = sum * perc_month/100;
+            perc_grn = sum * (percent/12/100);
             payment = payment_month + perc_grn;
 
         }
