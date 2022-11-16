@@ -32,7 +32,6 @@ int main()
             total_percent += perc_grn;
             perc_grn = sum * (percent/12/100);
             payment = payment_month + perc_grn;
-
         }
 
     printf("---------------------------------\n");
