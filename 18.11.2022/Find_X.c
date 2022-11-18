@@ -19,7 +19,8 @@ int main() {
 
    for (int i = 0; i < 5; i++) {
       scanf("%d", & ans);
-      if (counter <= 5) {
+
+      if (counter < 5) {
          if (ans > num) {
             printf("No! The number < than your answer. Try again.\n");
             counter++;
@@ -32,8 +33,9 @@ int main() {
             printf("You win!\n");
             return;
          }
-      } else
-         printf("Your lose! Try again and good luck.");
+      }
+      if (counter >= 5)
+         printf("\nYour lose! Try again and good luck.\n");
    }
 
    return 0;
