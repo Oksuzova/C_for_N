@@ -17,8 +17,8 @@ int main ()
             {
                 bin *= 1*10;
             }
-            res += bin;
-            nums -= pow (2, lg);
+        res += bin;
+        nums -= pow (2, lg);
     }
 
     printf("Decimal %d is binary %d", num, res);
