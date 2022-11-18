@@ -34,8 +34,10 @@ int main() {
             return;
          }
       }
-      if (counter >= 5)
+      if (counter >= 5){
          printf("\nYour lose! Try again and good luck.\n");
+         printf("\nThe number was %d. \n", num);
+      }
    }
 
    return 0;
