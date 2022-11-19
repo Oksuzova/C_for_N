@@ -12,11 +12,6 @@ int main()
     {
         printf("mas[%d] -> ", i);
         scanf("%i", &mas[i]);
-    }
-
-
-    for ( int i = 0; i < 5; i++)
-    {
         if (mas[i] !=0 )
             counter++;
     }
