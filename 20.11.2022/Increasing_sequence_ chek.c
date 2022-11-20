@@ -4,7 +4,7 @@ void main()
 {
     int mas[5];
     int i = 0;
-    int sample, found = 0, j;
+    int sample, found = 0;
 
 
     printf("Search in an array by iteration\n");
@@ -17,16 +17,13 @@ void main()
     }
 
     i = 0;
-    j = 1;
 
     do {
-        if (mas[i] >= mas[j])
+        if (mas[i] >= mas[i+1])
             found = 1;
-        else{
+        else
             i++;
-            j++;}
-
-    } while (found != 1 && j < 5);
+    } while (found != 1 && i < 4);
 
     if (found == 1)
         printf("The sequence is not increasing.\n");
