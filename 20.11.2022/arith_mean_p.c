@@ -16,6 +16,7 @@ void main()
     for (int i = 1; i <= 10; i++)
         scanf("%i", p++);
 
+    p = a;
     for (int i = 1; i <= 10; i++)
     {
         if (*p != 0) counter++;
@@ -23,11 +24,11 @@ void main()
         p++;
     }
 
-    arithm_mean = (float) sum/counter;
+    arithm_mean = (float)sum/counter;
 
     printf("The sum of the elements of the array: %d\n", sum);
     printf("Number of non-zero elements: %d\n", counter);
-    printf("Arithmetic mean of non-zero elements: %f\n", arithm_mean);
+    printf("Arithmetic mean of non-zero elements: %.2f\n", arithm_mean);
 
 
 }
