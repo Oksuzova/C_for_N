@@ -17,7 +17,6 @@ void main()
     }
 
     i = 0;
-
     do {
         if (mas[i] >= mas[i+1])
             found = 1;
