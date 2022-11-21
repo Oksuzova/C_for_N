@@ -7,7 +7,7 @@ void main()
     int max, tmp, check;
 
 
-    printf("Descending sort\n");
+    printf("Bubble sort\n");
     printf("Enter %d numbers.\n", len);
 
     for (int i = 0; i < len; i++)
