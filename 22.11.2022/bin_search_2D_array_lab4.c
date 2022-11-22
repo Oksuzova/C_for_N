@@ -3,9 +3,11 @@
 #include <time.h>
 
 void main() {
+
    const int len = 5, width = 5;
    int mas[width][len];
    int tmp, check, up, down, mid, mid1, key, found;
+
    time_t t;
 
    srand((unsigned) time( & t));;
